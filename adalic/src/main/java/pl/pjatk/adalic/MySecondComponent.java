@@ -8,7 +8,7 @@ public class MySecondComponent {
 
    // MyFirstComponent Component;
 
-    public MySecondComponent(@Value("${my.cutom.property}") String somestring) {
+    public MySecondComponent(@Value("${my.custom.property:Hello from some default String}") String somestring) {
        // Component = component;
         System.out.println("Hello from MySecondComponent");
         System.out.println(somestring);
